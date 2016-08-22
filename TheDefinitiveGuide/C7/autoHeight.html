@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--height auto包含元素时，高度由子元素确定，如果子元素有外边距，父元素需要有内边距或边框才能被子元素撑起来-->
+<div style="height:auto;background-color:silver">
+    <p style="margin:3em">a paragraph!</p>
+</div>
+<div style="height:auto;padding-top:1px;border-bottom:1px solid;background-color:silver">
+    <p style="margin:3em">a paragraph!</p>
+</div>
+</body>
+</html>

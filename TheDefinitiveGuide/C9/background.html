@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            border: 10px dashed;
+            padding: 20px;
+            background: padding-box no-repeat url('../../img/ctryl.png') bottom  border-box,
+                        silver no-repeat url('../../img/ctryl.png')  content-box border-box top;
+        }
+    </style>
+</head>
+<body>
+<div style="height: 300px">
+
+</div>
+<script>
+    var divNode = document.querySelector("div");
+    console.log(css(divNode, "background-repeat"));
+
+    function css(e, styleName){
+        var result;
+        if (e.currentStyle)
+            result = e.currentStyle[styleName];
+        else if (window.getComputedStyle)
+            result = document.defaultView.getComputedStyle(e, null).getPropertyValue(styleName);
+        return result;
+    }
+</script>
+</body>
+</html>

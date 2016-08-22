@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .flex {
+            display: -webkit-flex;
+            display: flex;
+            width: 600px;
+            height: 600px;
+            background: silver;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+        }
+        .flex div {
+            margin: 5px;
+            background: #aaa;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div style="width:170px">1</div>
+    <div style="width:130px;order: 0">2</div>
+    <div style="width:150px;order: 3;">3</div>
+    <div style="width:140px;order: 2;">4</div>
+    <div style="width:160px">5</div>
+    <div style="width:150px">6</div>
+    <div style="width:120px">7</div>
+</div>
+</body>
+</html>

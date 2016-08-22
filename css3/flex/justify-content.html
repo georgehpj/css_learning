@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .flex {
+            display: -webkit-flex;
+            display: flex;
+            height: 600px;
+            background: silver;
+            flex-flow: column nowrap;
+            /*主轴对齐方式*/
+            /*justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-between;*/
+            justify-content: space-around;
+        }
+        .flex div {
+            width: 100px;
+            margin: 5px;
+            background: #aaa;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div style="height:70px">1</div>
+    <div style="height:30px">2</div>
+    <div style="height:50px">3</div>
+    <div style="height:40px">4</div>
+    <div style="height:60px">5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+            background: #eee;
+            margin: auto;
+            height: 100px;
+            width: 100px;
+        }
+        .child{
+            background: #eee;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    The values of an element's <span>'width' </span>, <div class="child">'margin-left',</div> 'margin-right', 'left' and 'right'
+    properties as used for layout depend on the type of box generated and on each other.
+    (The value used for layout is sometimes referred to as the used value.) In principle,
+    the values used are the same as the computed values, with 'auto' replaced by some suitable value,
+    and percentages calculated based on the containing block, but there are exceptions.
+    The following situations need to be distinguished:
+</div>
+
+<div style="background: #ddd;margin-bottom: 5px">
+    <div class="child">'margin-left',</div>
+    <div class="child">'margin-left',</div>
+</div>
+</body>
+</html>
